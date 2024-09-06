@@ -1,0 +1,156 @@
+:root {
+    --branco-principal: #acc9ebf6;
+    --cinza-secundario: #98a7e9b6;
+    --botao-azul: #06428b;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/curso1.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste para cobrir a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    height: 50vh; /* Garante que a seção ocupe toda a altura da tela */
+    position: relative; /* Permite ajustes posicionais adicionais se necessário */
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Ajustado para uso de frações */
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    padding: 1em; /* Adicionado */
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    max-width: 100%; /* Adicionado para garantir responsividade */
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 auto; /* Ajustado para centralizar */
+    max-width: 1200px; /* Adicionado para limitar a largura */
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    display: flex; /* Ajustado para uso de flexbox */
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.5em; /* Ajustado para mais espaço */
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+    text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    padding: 0; /* Adicionado para remover padding */
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+    margin: 0 1em; /* Adicionado para espaçar os itens */
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    padding: 0; /* Adicionado para remover padding */
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin: 0 1em; /* Ajustado para espaçar links */
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
